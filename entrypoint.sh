@@ -2,7 +2,7 @@
 set -e
 
 if [ "$(id -u)" = '0' ]; then
-    exec su-exec obfsproxy "$@"
+    exec su-exec obfsproxy obfsproxy "$@"
 fi
 
 exec "$@"

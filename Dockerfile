@@ -18,4 +18,4 @@ RUN adduser -D -s /bin/false -H obfsproxy \
 
 COPY entrypoint.sh /usr/local/bin
 ENTRYPOINT ["/sbin/tini", "--", "entrypoint.sh"]
-CMD ["obfsproxy", "-h"]
+CMD ["--help"]
