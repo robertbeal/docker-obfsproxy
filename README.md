@@ -6,14 +6,14 @@ Docker-ised version of obfsproxy, for "stealth" VPNing
 
 ```
 docker run \
-    --rm
+    --rm \
     --name obfsproxy \
     --read-only \
     -p 1050:1050 \
     robertbeal/obfsproxy --help
     
 docker run \
-    --rm
+    --rm \
     --name obfsproxy \
     --read-only \
     -p 1050:1050 \
