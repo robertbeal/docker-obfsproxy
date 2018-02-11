@@ -1,6 +1,8 @@
 FROM arm32v6/alpine:3.7
 MAINTAINER Rob Beal <rob@kohi.uk>
 
+ENV VERSION=0.2.13
+
 RUN adduser -D -s /bin/false -H obfsproxy \
   && apk add --no-cache --virtual=build-dependencies \
     build-base \
@@ -12,7 +14,7 @@ RUN adduser -D -s /bin/false -H obfsproxy \
     su-exec \
     tini \
   && pip install --upgrade pip \
-  && pip install obfsproxy \
+  && pip install obfsproxy==$VERSION \
   && apk del --purge build-dependencies \
   && rm -rf /tmp/*
 
