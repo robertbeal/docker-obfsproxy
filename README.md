@@ -1,10 +1,10 @@
-# docker-obfsproxy
+# obfsproxy
 
-Docker-ised version of obfsproxy, for "stealth" VPNing
+Container-ised, multi-arch version of obfsproxy, for "stealth" VPNing
 
-# Getting running
+# usage
 
-```
+```bash
 docker run \
     --init \
     --rm \
