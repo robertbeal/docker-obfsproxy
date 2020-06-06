@@ -9,8 +9,8 @@ RUN adduser -D -s /bin/false -H obfsproxy \
   gmp-dev \
   python-dev \
   && apk add --no-cache \
-  python \
-  py-pip \
+  python3 \
+  py3-pip \
   su-exec \
   && pip install --no-cache-dir --upgrade pip \
   && pip install --no-cache-dir obfsproxy==$VERSION \
