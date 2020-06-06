@@ -52,6 +52,6 @@ def test_user(host):
     assert host.user(user).shell == "/bin/false"
 
 
-@pytest.mark.parametrize("package", [("python"), ("py-pip"), ("su-exec")])
+@pytest.mark.parametrize("package", [("python3"), ("py3-pip"), ("su-exec")])
 def test_installed_dependencies(host, package):
     assert host.package(package).is_installed
