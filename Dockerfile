@@ -7,7 +7,7 @@ RUN adduser -D -s /bin/false -H obfsproxy \
   && apk add --no-cache --virtual=build-dependencies \
   build-base \
   gmp-dev \
-  python-dev \
+  python3-dev \
   && apk add --no-cache \
   python3 \
   py3-pip \
